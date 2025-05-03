@@ -123,7 +123,7 @@ SaaS-Labs-Hackathon/
 ---
 
 ### 📈 Workflow Diagram
-
+#### 1. Content Workflow
 ```mermaid
 graph TD
     Start([Start: User Input]) --> ContentFunction[Content Function<br>Extract: Persona, Position, Target, Function]
@@ -137,7 +137,18 @@ graph TD
     SEO --> EndSEO[END]
     AdCopy --> EndAd[END]
 ```
+#### 2. Finance and Pricing Workflow
+```mermaid
+graph TD
+    Start([Start: User Input]) --> ParseInput[ Content Function<br/>Extract: Cost Structure, Competitor Price, Target Customer, Function Type]
 
+    ParseInput -->|Function: Pricing| PricingAgent[Pricing Strategy Agent<br/>→ Pricing Model & Justification]
+    ParseInput -->|Function: Finance/Data| DataAgent[ Data Analyst Agent<br/>→ Metrics & Forecasts]
+    ParseInput -->|Unknown| EndUnknown[END]
+
+    PricingAgent --> EndPricing[END]
+    DataAgent --> EndData[END]
+```
 
 
 ---
