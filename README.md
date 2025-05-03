@@ -126,16 +126,19 @@ SaaS-Labs-Hackathon/
 #### 1. Content Workflow
 ```mermaid
 graph TD
-    Start([Start: User Input]) --> ContentFunction[Content Function<br>Extract: Persona, Position, Target, Function]
+    A([Start: User Input]) --> B[Content Function<br>Extract: Persona, Position,<br>Target, Function]
 
-    ContentFunction -->|Landing Page| LandingPage[Generate Landing Page<br>→ HTML & Text Output]
-    ContentFunction -->|SEO| SEO[Generate SEO Strategy<br/>→ Keywords + Trends]
-    ContentFunction -->|Ad Copy| AdCopy[Generate Ad Copy<br/>→ Platform-Specific Ads]
-    ContentFunction -->|Unknown| EndUnknown[END]
+    B --> C[Get SEO Keywords<br>via Google Trends]
+    C --> D[Generate SEO Strategy<br>→ With Trend-Aware Keywords]
+    D --> E1[END]
 
-    LandingPage --> EndLanding[END]
-    SEO --> EndSEO[END]
-    AdCopy --> EndAd[END]
+    B --> F[Generate Landing Page<br>→ Prompted Directly]
+    F --> E2[END]
+
+    B --> G[Generate Ad Copy<br>→ Prompted Directly]
+    G --> E3[END]
+
+    B --> H[END]
 ```
 #### 2. Finance and Pricing Workflow
 ```mermaid
