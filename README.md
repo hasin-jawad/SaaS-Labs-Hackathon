@@ -99,7 +99,7 @@ SaaS-Labs-Hackathon/
 
 * `app/prompts/`: Prompt templates for various agents.
 
-* `app/schemas/`: Request and response schemas for FastAPI
+* `app/schemas/`: Request and response schemas for FastAPI.
   
 * `uploads/`: Dataset uploaded for analysis or PDF uploaded for RAG.
 
