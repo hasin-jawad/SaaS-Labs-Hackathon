@@ -2,7 +2,7 @@
 
 ### Overview
 
-The **SaaS Labs Hackathon** project is a multi-agent system designed to assist early-stage SaaS startups in crafting effective content strategies and financial models. It leverages AI agents for content generation, SEO optimization, ad creation, and financial analysis, providing a streamlined workflow for startup teams.
+The **SaaS Labs Hackathon** project is a multi-agent system designed to assist early-stage SaaS startups in crafting effective content strategies and financial models. It leverages AI agents for content generation, SEO optimization, ad creation, and financial analysis, providing a streamlined workflow for startup teams. This project was done during AI Intern Hackathon program arranged by Liberate Labs.
 
 ---
 
